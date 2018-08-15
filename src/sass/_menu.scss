@@ -1,0 +1,22 @@
+.menu-mobile{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vw;
+    >.social{
+        padding: 4.6vh;
+        text-align: center;
+        >.icon{
+            font-size: 20px;
+        }
+    }
+    .menu-item{
+        >.item{
+            display: block;
+            padding: 7.28vh;
+            text-align: center;
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}

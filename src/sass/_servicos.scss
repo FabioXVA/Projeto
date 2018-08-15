@@ -1,0 +1,26 @@
+.servicos{
+    width: 100vw;
+    height: auto ;
+    display: block;
+    >.col-2{
+        width: 100vw;
+        padding: 30px;
+        box-sizing: border-box;
+        >.title{
+            padding-top: 0 10px;
+            &:nth-child(1){
+                margin-top: 25px;
+            }
+        }
+        >.text{
+            padding: 10px 0;
+        }
+        >.button{
+            @include ghost-button(arial, 14px, $black, 1px, $primary, 10px 30px, 1.5s, $white);
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+}

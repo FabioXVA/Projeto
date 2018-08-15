@@ -1,0 +1,16 @@
+.banner{
+    width: 100vw;
+    display: block;
+    background-color: $black;
+    padding: 20vh 0;
+    .title{
+        color: $white;
+        font-size: 25px;
+        text-align: center;
+    }
+    .description{
+        @extend .title;
+        font-size: 30px;
+        margin-top: 0;
+    }
+}
