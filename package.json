@@ -1,5 +1,5 @@
 {
-  "name": "xambra",
+  "name": "Code",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FabioXVA/xambra.git"
+    "url": "git+https://github.com/FabioXVA/Projeto.git"
   },
   "author": "Fábio xavier",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FabioXVA/xambra/issues"
+    "url": "https://github.com/FabioXVA/Projeto/issues"
   },
-  "homepage": "https://github.com/FabioXVA/xambra#readme",
+  "homepage": "https://github.com/FabioXVA/Projeto#readme",
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.24.5",
