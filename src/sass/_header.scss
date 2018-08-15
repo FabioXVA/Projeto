@@ -2,8 +2,14 @@
     padding: 0px;
     margin: 0;
 }
+.header{
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+}
 .show{
-    display: none;
+    //display: none;
+	
 }
 .logo{
     >.link{
