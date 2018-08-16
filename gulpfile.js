@@ -63,7 +63,7 @@ gulp.task('watch', function () {
 	gulp.watch("./*.php").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['sassDev', 'sassProd', 'serve', 'watch'], function () {
+gulp.task('default', ['sassDev', 'sassProd'	,/*'serve', */'watch'], function () {
 
 
 });

@@ -8,13 +8,18 @@
     <title>ThinksCode</title>
     <link rel="stylesheet" href="src/css/fontello.css">
 	<link rel="stylesheet" href="src/css/fontello-codes.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600i,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="dev/css/style.css">
 </head>
 
 <body>
 	<header class="header">
 			<input type="checkbox" id="show" class="show">
+			<label class="hamburger" for="show"> 
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>	
+			</label>
 					<nav class="menu-mobile menu">
 							<ul class="social">
 									<label class="close" for="show"><i class="icon ">x</i></label>

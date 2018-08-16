@@ -1,0 +1,10 @@
+.container, .card-group{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.card-group,.servicos{
+	@include flexbox();
+	@include justify-content(space-between);
+	@include align-items(center);
+	@include flex-wrap(wrap);
+}

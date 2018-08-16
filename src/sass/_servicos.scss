@@ -1,11 +1,15 @@
 .servicos{
     width: 100vw;
     height: auto ;
-    display: block;
-    >.col-2{
-        width: 100vw;
+    >.col-half{
+				ms-flex-preferred-size: 0;
+				-ms-flex-positive: 1;
+				flex-grow: 1;
         padding: 30px;
         box-sizing: border-box;
+				>img{
+					max-width:100%;
+				}
         >.title{
             padding-top: 0 10px;
             &:nth-child(1){
@@ -16,7 +20,7 @@
             padding: 10px 0;
         }
         >.button{
-            @include ghost-button(arial, 14px, $black, 1px, $primary, 10px 30px, 1.5s, $white);
+            @include ghost-button(arial, 14px, $black, 1px, $black, 10px 30px, 1.5s, $white);
             cursor: pointer;
             margin-top: 20px;
             font-weight: 700;
