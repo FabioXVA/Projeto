@@ -1,23 +1,34 @@
 .servicos{
     height: auto ;
     >.col-half{
-		ms-flex-preferred-size: 0;
-		-ms-flex-positive: 1;
-		flex-grow: 1;
-        padding: 30px;
-        box-sizing: border-box;
-		@include mq('tablet-wide') {
-			flex-basis: 0;
-		}
-				>img{
-					max-width:100%;
+			ms-flex-preferred-size: 0;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+    		padding: 30px;
+   			box-sizing: border-box;
+			@include mq('tablet-wide') {
+				flex-basis: 0;
+			}
+			>.picture{
+				max-width:100%;
 				}
         >.title{
             padding-top: 0 10px;
+			font-size: 27px;
+    		font-weight: 900;
+			color:$black;
+			text-transform:uppercase;
+			>.featured{
+				color:$primary;
+			}
             &:nth-child(1){
                 margin-top: 25px;
             }
         }
+		>.sub-title{
+			font-weight: 100;
+			font-size: 1.8rem;
+		}
         >.text{
             padding: 10px 0;
         }
