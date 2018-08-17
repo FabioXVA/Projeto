@@ -222,7 +222,6 @@
 }
 
 .servicos {
-  width: 100vw;
   height: auto;
 }
 
@@ -232,6 +231,12 @@
   flex-grow: 1;
   padding: 30px;
   box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1024px) {
+  .servicos > .col-half {
+    flex-basis: 0;
+  }
 }
 
 .servicos > .col-half > img {
@@ -276,18 +281,49 @@
   width: 21rem;
   height: auto;
   margin: 1rem auto;
-  border: solid 1px #E6E7E8;
   border-radius: 5px;
+  border: solid 1px #E6E7E8;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-group > .card:hover {
+  background-color: #304a75;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-group > .card:hover > .icon-default:before {
+  color: #fff;
+}
+
+.card-group > .card:hover > .description {
+  color: #fff;
 }
 
 .card-group > .card > .icon-default {
   width: 100%;
-  height: 185px;
-  background-color: #E6E7E8;
+  height: 130px;
+  font-size: 4rem;
+  text-align: center;
   display: block;
+}
+
+.card-group > .card > .icon-default:before {
+  margin: 17%;
+  width: auto;
+  color: #304a75;
 }
 
 .card-group > .card > .description {
   display: inline-block;
   padding: 1.25rem;
+}
+
+.card-group > .card > .description > .title, .card-group > .card > .banner.description > .description {
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-group > .card > .description > .caption {
+  text-align: center;
 }
