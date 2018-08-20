@@ -3,12 +3,32 @@
   src: url("../../font/fontello.eot?") format("eot"), url("../../font/fontello.woff2") format("woff2"), url("../../font/fontello.woff") format("woff");
 }
 
-.container, .card-group {
+.conteiner,
+.card-group {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.card-group, .servicos {
+.conteiner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.card-group,
+.servicos,
+.metodologia {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -27,6 +47,14 @@
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.col-half {
+  ms-flex-preferred-size: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 * {
@@ -141,7 +169,7 @@
 }
 
 .banner {
-  width: 100vw;
+  width: 100%;
   display: block;
   background-color: #232323;
   padding: 20vh 0;
@@ -225,14 +253,6 @@
   height: auto;
 }
 
-.servicos > .col-half {
-  ms-flex-preferred-size: 0;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
 @media only screen and (min-width: 1024px) {
   .servicos > .col-half {
     flex-basis: 0;
@@ -287,6 +307,43 @@
 
 .servicos > .col-half > .button:hover {
   background: #232323;
+  color: #fff;
+}
+
+.metodologia {
+  background-color: #304a75;
+}
+
+@media only screen and (min-width: 1024px) {
+  .metodologia {
+    padding: 10vh 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .metodologia > .col-half {
+    flex-basis: 0;
+  }
+}
+
+.metodologia > .col-half > .title, .metodologia > .banner.col-half > .description {
+  padding-bottom: 10px;
+  font-size: 2.4rem;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.metodologia > .col-half > .description {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.metodologia > .col-half > .description > .sub-title,
+.metodologia > .col-half > .description > .text-description {
+  font-weight: 100;
+  padding-bottom: 10px;
   color: #fff;
 }
 
