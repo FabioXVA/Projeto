@@ -28,7 +28,8 @@
 
 .card-group,
 .servicos,
-.metodologia {
+.metodologia,
+.portifolio {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -345,6 +346,27 @@
   font-weight: 100;
   padding-bottom: 10px;
   color: #fff;
+}
+
+.portifolio .conteiner {
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.portifolio .conteiner .title, .portifolio .conteiner .banner > .description,
+.portifolio .conteiner .sub-title {
+  text-align: center;
+  width: 100%;
+  color: #232323;
+}
+
+.portifolio .conteiner .title, .portifolio .conteiner .banner > .description {
+  font-size: 3rem;
+  margin-bottom: 27px;
+}
+
+.portifolio .conteiner .sub-title {
+  font-size: 1.0625rem;
 }
 
 .card-group > .card {

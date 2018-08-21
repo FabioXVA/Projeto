@@ -10,7 +10,8 @@
 }
 .card-group,
 .servicos,
-.metodologia{
+.metodologia,
+.portifolio{
 	@include flexbox();
 	@include justify-content(space-between);
 	@include align-items(center);
