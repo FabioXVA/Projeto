@@ -4,6 +4,8 @@
 .icon-css3:before { content: '\e802'; } /* '' */
 .icon-heart-empty:before { content: '\e803'; } /* '' */
 .icon-html:before { content: '\e804'; } /* '' */
+.icon-zoom-in:before { content: '\e805'; } /* '' */
+.icon-zoom-out:before { content: '\e806'; } /* '' */
 .icon-crown:before { content: '\e80d'; } /* '' */
 .icon-responsive:before { content: '\e80e'; } /* '' */
 .icon-esquadro:before { content: '\e80f'; } /* '' */

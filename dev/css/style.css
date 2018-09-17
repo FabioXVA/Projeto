@@ -1,10 +1,6 @@
-@font-face {
-  font-family: "fontello";
-  src: url("../../font/fontello.eot?") format("eot"), url("../../font/fontello.woff2") format("woff2"), url("../../font/fontello.woff") format("woff");
-}
-
 .conteiner,
-.card-group {
+.card-group,
+.time {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -348,25 +344,174 @@
   color: #fff;
 }
 
-.portifolio .conteiner {
+.portifolio .thumb-group {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 30px;
 }
 
-.portifolio .conteiner .title, .portifolio .conteiner .banner > .description,
-.portifolio .conteiner .sub-title {
+.portifolio .thumb-group > .conteiner {
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 100%;
+}
+
+.portifolio .thumb-group > .conteiner > .title, .portifolio .thumb-group > .banner.conteiner > .description,
+.portifolio .thumb-group > .conteiner > .sub-title {
   text-align: center;
   width: 100%;
   color: #232323;
 }
 
-.portifolio .conteiner .title, .portifolio .conteiner .banner > .description {
+.portifolio .thumb-group > .conteiner > .title, .portifolio .thumb-group > .banner.conteiner > .description {
   font-size: 3rem;
   margin-bottom: 27px;
 }
 
-.portifolio .conteiner .sub-title {
+.portifolio .thumb-group > .conteiner > .sub-title {
   font-size: 1.0625rem;
+}
+
+.portifolio .thumb-group .thumb {
+  width: 18rem;
+  min-height: 19rem;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  border: solid 1px #E6E7E8;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 1rem;
+}
+
+.portifolio .thumb-group .thumb > .thumbnail {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #304a75;
+}
+
+.portifolio .thumb-group .thumb > .thumbnail > .thumb-img {
+  max-width: 100%;
+}
+
+.portifolio .thumb-group .thumb > .divider {
+  height: 40%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 0;
+}
+
+.portifolio .thumb-group .thumb > .divider > .title, .portifolio .thumb-group .thumb > .banner.divider > .description,
+.portifolio .thumb-group .thumb > .divider > .date {
+  font-size: 1rem;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+.portifolio .thumb-group .thumb > .divider > .title, .portifolio .thumb-group .thumb > .banner.divider > .description {
+  margin: 1rem 0 0 0;
+}
+
+.portifolio .thumb-group .thumb > .divider > .date {
+  margin-bottom: 0.9rem;
+  font-size: 0.7rem;
+}
+
+.portifolio .thumb-group .thumb > .divider > .icon-zoom-in {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+  display: block;
+  border-radius: 50%;
+  margin: 0.1rem auto;
+  z-index: 1;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.portifolio .thumb-group .thumb > .divider > .icon-zoom-in:before {
+  color: #ed145b;
+  margin: 7px auto;
+  display: block;
+}
+
+.portifolio .thumb-group .thumb > .divider > .icon-zoom-in:hover, .portifolio .thumb-group .thumb > .divider > .icon-zoom-in:active {
+  background-color: #fff;
+}
+
+.portifolio .thumb-group .thumb > .divider > .icon-zoom-in:hover:before, .portifolio .thumb-group .thumb > .divider > .icon-zoom-in:active:before {
+  color: #232323;
+  margin: 7px auto;
+  display: block;
+  transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.portifolio .button-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: space-around;
+}
+
+.portifolio .button-group .button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: arial;
+  font-size: 14px;
+  color: #232323;
+  border: 1px solid #232323;
+  padding: 10px 30px;
+  -webkit-transition: color 1.5s, background 1.5s;
+  transition: color 1.5s, background 1.5s;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: block;
+}
+
+.portifolio .button-group .button:hover {
+  background: #232323;
+  color: #fff;
+}
+
+.time {
+  margin: 30px 0;
+  padding: 15% 0;
+  background-color: #f1f2f2;
+}
+
+.time > .slide-container {
+  max-width: 80%;
+  height: 220px;
+  background-color: #fff;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .card-group > .card {

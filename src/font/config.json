@@ -323,6 +323,18 @@
       "search": [
         "esquadro"
       ]
+    },
+    {
+      "uid": "0b2b66e526028a6972d51a6f10281b4b",
+      "css": "zoom-in",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d25d10efa900f529ad1d275657cfd30e",
+      "css": "zoom-out",
+      "code": 59398,
+      "src": "fontawesome"
     }
   ]
 }
