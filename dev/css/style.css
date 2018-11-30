@@ -1,6 +1,6 @@
 .conteiner,
 .card-group,
-.time {
+.container-project {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -25,7 +25,8 @@
 .card-group,
 .servicos,
 .metodologia,
-.portifolio {
+.portifolio,
+.projeto {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -111,21 +112,21 @@
 }
 
 .menu-mobile {
-  width: 100vw;
+  width: 70%;
   height: 100vh;
   position: absolute;
   position: fixed;
   top: 0;
   left: -100vw;
   opacity: 0;
-  background-color: #304a75;
+  background-color: #fff;
   transition: 1s;
 }
 
 .menu-mobile > .social {
   padding: 4.6vh;
   text-align: center;
-  background-color: #232323;
+  background-color: #304a75;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -154,15 +155,24 @@
   color: #fff;
 }
 
+.menu-mobile > .social > .close > .icon {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 100;
+  font-family: Helvetica, sans-serif;
+}
+
 .menu-mobile .menu-item > .item {
   display: block;
   padding: 4vh;
   text-align: center;
-  color: #fff;
+  color: #232323;
+  font-weight: 700;
 }
 
 .menu-mobile .menu-item > .item:hover {
   background-color: #1d2d48;
+  color: #fff;
 }
 
 .banner {
@@ -345,6 +355,8 @@
 }
 
 .portifolio .thumb-group {
+  width: 920px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -499,8 +511,38 @@
   color: #fff;
 }
 
+.project {
+  margin: 10% auto;
+  padding: 30px;
+  background-color: #ff89b0;
+}
+
+.project .container-project {
+  position: relative;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.project .container-project .description-project {
+  padding: 15px;
+  margin-bottom: 2rem;
+}
+
+.project .container-project .description-project .description {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.project .container-project .description-img {
+  position: relative;
+  padding: 15px 0;
+}
+
 .time {
-  margin: 30px 0;
+  width: 100vw;
+  margin: 30px auto;
   padding: 15% 0;
   background-color: #f1f2f2;
 }
@@ -512,6 +554,10 @@
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-group {
+  margin-bottom: 1rem;
 }
 
 .card-group > .card {

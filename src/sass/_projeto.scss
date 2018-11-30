@@ -1,0 +1,31 @@
+.project{
+	margin: 10% auto;
+	padding: 30px;
+	background-color:$bgsecondary;
+	
+	.container-project{
+		position: relative;
+		@include flex-direction(column);
+		
+		.description-project{
+			padding: 15px;
+			margin-bottom: 2rem;
+			.description{
+				@include font-source-sans(14px); 
+			}
+		}
+		
+		.description-img{
+			position: relative;
+			padding: 15px 0;
+	
+			.project-img{
+// 				position: absolute;
+// 				bottom: -120px;
+// 				width: 80%;
+// 				left: 110px;
+			}
+		}
+		
+	}
+}

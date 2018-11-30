@@ -5,6 +5,7 @@ include"template/servicos.php";
 include"template/sobre.php";
 include"template/metodologia.php";
 include"template/portifolio.php";
+include"template/projeto.php";
 include"template/time.php";
 include"template/footer.php";
 ?>

@@ -1,6 +1,6 @@
 .conteiner,
 .card-group,
-.time{
+.container-project{
 	max-width: 1140px;
 	margin: 0 auto;
 }
@@ -12,7 +12,8 @@
 .card-group,
 .servicos,
 .metodologia,
-.portifolio{
+.portifolio,
+.projeto{
 	@include flexbox();
 	@include justify-content(space-between);
 	@include align-items(center);

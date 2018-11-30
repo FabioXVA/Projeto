@@ -5,7 +5,7 @@
 			<span class="sub-title">Projetos mais recentes</span>
 		</div>
 		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img" src="../src/img/1048.jpg" alt=""></span>
+			<span class="thumbnail"><img class="thumb-img" src="../src/img/mobile-img.jpg" alt=""></span>
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
@@ -13,7 +13,7 @@
 			</div>
 		</div>
 		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img" src="../src/img/1048.jpg" alt=""></span>
+			<span class="thumbnail"><img class="thumb-img" src="../src/img/mobile-img.jpg" alt=""></span>
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img" src="../src/img/1048.jpg" alt=""></span>
+			<span class="thumbnail"><img class="thumb-img" src="../src/img/mobile-img.jpg" alt=""></span>
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img" src="../src/img/1048.jpg" alt=""></span>
+			<span class="thumbnail"><img class="thumb-img" src="../src/img/mobile-img.jpg" alt=""></span>
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img" src="../src/img/1048.jpg" alt=""></span>
+			<span class="thumbnail"><img class="thumb-img"  src="../src/img/mobile-img.jpg" alt=""></span>
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
@@ -45,23 +45,7 @@
 			</div>
 		</div>
 		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img" src="../src/img/1048.jpg" alt=""></span>
-			<div class="divider">
-				<h3 class="title">Born</h3>
-				<span class="date">20 ago 2018</span>
-				<i class="icon-zoom-in"></i>
-			</div>
-		</div>
-		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img"  src="../src/img/1048.jpg" alt=""></span>
-			<div class="divider">
-				<h3 class="title">Born</h3>
-				<span class="date">20 ago 2018</span>
-				<i class="icon-zoom-in"></i>
-			</div>
-		</div>
-		<div class="thumb">
-			<span class="thumbnail"><img class="thumb-img" src="../src/img/1048.jpg" alt=""></span>
+			<span class="thumbnail"><img class="thumb-img" src="../src/img/mobile-img.jpg" alt=""></span>
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>

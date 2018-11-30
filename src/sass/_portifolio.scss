@@ -1,5 +1,7 @@
 .portifolio{
 	.thumb-group{
+		width: 920px;
+		margin: 0 auto;
 		@include flexbox();
 		@include justify-content(space-around);
 		@include flex-wrap(wrap);
