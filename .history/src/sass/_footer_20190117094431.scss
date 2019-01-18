@@ -1,0 +1,23 @@
+@import 'formulario';
+
+.footer{
+    padding: 5rem 0;
+    background-color: $bgquinquennary;
+    >.form-container{
+        >.form{
+            >input.form-itens{
+                width: 40%;
+                padding: 10px 0;
+            }
+            >.form-itens {
+                background-color: transparent;
+                color: $white;
+                border:1px solid $white;
+                ::placeholder{
+                    background-color: transparent;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

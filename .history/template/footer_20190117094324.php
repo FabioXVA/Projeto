@@ -1,0 +1,18 @@
+<section class="footer">
+    <div class="form-container">
+        <form class="form" action="">
+            <input class="form-itens" type="text" placeholder="Nome Completo">
+            <input class="form-itens" type="email" placeholder="E-mail" >
+            <textarea class="form-itens" name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <button disabled="disabled"></button>
+        </form>
+    </div>
+
+</section>
+
+
+
+<script src="src/js/script.js"></script>
+</body>
+
+</html>

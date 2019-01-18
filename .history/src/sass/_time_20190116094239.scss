@@ -1,0 +1,76 @@
+.time{
+	width:100vw;
+    margin: 30px auto;
+    padding: 15% 0;
+  	background-color:$bgtertiary;
+	>.slide-container{
+		max-width: 80%;
+		height: 220px;
+   		margin: 0 auto;
+		
+		
+        position: relative;
+        .owl-carousel .owl-stage-outer{
+            overflow-x:hidden;
+            height: 270px;
+            padding-top: 50px;
+            p{
+                padding: 70px 15px;
+                text-align: center;
+                font-size: 13px;
+                 background-color: #fff;
+                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                 0 1px 2px rgba(0, 0, 0, 0.24);
+            }  
+        }
+        .avatar{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: -50px;
+            left: 8rem;
+            border-radius: 50%;
+            background-color: #000;
+        }
+	}
+    .owl-theme .owl-nav {
+        position: absolute;
+        width: 100%;
+        top: 34%;
+
+
+        .owl-prev,
+        .owl-next{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            
+            
+        }
+        .jello-vertical{
+            -webkit-animation: jello-vertical 0.9s both;
+            animation: jello-vertical 0.9s both;
+        }
+        .owl-prev span,
+        .owl-next span{
+            padding: 12px 20px;
+            background-color: $white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 50%; 
+            :hover{
+                color: $black;
+            }
+        }
+        .owl-prev{
+            left: -28px;
+        }
+        .owl-next{
+            right: -28px;
+        }
+         [class*='owl-']:hover {
+            color: $black;
+        }
+
+    }
+}

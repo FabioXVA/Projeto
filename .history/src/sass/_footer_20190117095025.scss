@@ -1,0 +1,26 @@
+@import 'formulario';
+
+.footer{
+    background-color: $bgquinquennary;
+    >.form-container{
+        max-width: 80%;
+        margin: 0 auto;
+        >.form{
+            >input.form-itens{
+                width: 50%;
+                padding: 10px 0;
+                margin:1.5rem 0;
+            }
+            >.form-itens {
+                max-width: 100%;
+                background-color: transparent;
+                color: $white;
+                border:1px solid $white;
+                ::placeholder{
+                    background-color: transparent;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

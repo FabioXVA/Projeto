@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ThinksCode</title>
+    <title>Estro</title>
     <link rel="stylesheet" href="src/css/fontello.css">
 	<link rel="stylesheet" href="src/css/fontello-codes.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
@@ -13,6 +13,8 @@
 </head>
 
 <body>
+<script src="src/js/jquey.js"></script>
+<script src="src/js/owl.carousel.min.js"></script>
 	<header class="header">
 			<input type="checkbox" id="show" class="show">
 			<label class="hamburger" for="show"> 
@@ -37,7 +39,7 @@
 							</ul>
 					</nav>
 					<div class="logo">
-							<a class="link" href="#"><h1 class="text">Logo</h1></a>
+							<a class="link" href="#"><h1 class="text">Logo - Estro</h1></a>
 					</div>
 		</header>
 	<main>
