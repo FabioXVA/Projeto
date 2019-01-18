@@ -18,11 +18,11 @@ $mail->IsSMTP(); // Enviar por SMTP
 $mail->Host = "smtp.gmail.com"; // Você pode alterar este parametro para o endereço de SMTP do seu provedor$mail->Host = "smtp.gmail.com"; // Você pode alterar este parametro para o endereço de SMTP do seu provedor
 $mail->Port = 587; 
 //$mail->Port = 25; 
-$mail->SMTPSecure = 'tsl';
  
 $mail->SMTPAuth = true; // Usar autenticação SMTP (obrigatório)$mail->SMTPSecure = 'ssl'; // Obrigatório para o Gmail
-$mail->Username = 'fabio.fxva@gmail.com'; // Usuário do servidor SMTP (endereço de email)$mail->Username = GUSER; // Usuário do servidor SMTP (endereço de email)
-$mail->Password = 'T02967010'; // Mesma senha da sua conta de email$mail->Password = GPWD; // Mesma senha da sua conta de email
+$mail->Username = GUSER; // Usuário do servidor SMTP (endereço de email)$mail->Username = GUSER; // Usuário do servidor SMTP (endereço de email)
+$mail->Password = GPWD; // Mesma senha da sua conta de email$mail->Password = GPWD; // Mesma senha da sua conta de email
+$mail->SMTPSecure = 'tls';
 // Configurações de compatibilidade para autenticação em TLS
 $mail->SMTPOptions = array(
  'ssl' => array(
@@ -31,7 +31,7 @@ $mail->SMTPOptions = array(
  'allow_self_signed' => true
  )
 );
-$mail->SMTPDebug = 1; // Você pode habilitar esta opção caso tenha problemas. Assim pode identificar mensagens de erro.
+$mail->SMTPDebug = 2; // Você pode habilitar esta opção caso tenha problemas. Assim pode identificar mensagens de erro.
  
 // Define o remetente
 $mail->From = "fabio.fxva@gmail.com"; // Seu e-mail
