@@ -1,0 +1,62 @@
+.show:checked ~ .menu-mobile{
+	left: 0vw;
+	opacity: 1;
+	display:block;
+}
+.menu-mobile{
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+		position:fixed;
+	  top: 0;
+    left: -100vw;
+		opacity: 0;
+		background-color: $white;
+		transition:1s;
+    >.social{
+        padding: 4.6vh;
+        text-align: center;
+				background-color: $primary;
+				@include flexbox();
+				@include justify-content(flex-end);
+				@include align-items(center);
+			
+        >.icon{
+            font-size: 20px;
+						color:#fff;
+						padding: 7px 6px;
+				}
+				>.close{
+						position: absolute;
+   					left: 10vw;
+						color:$white;
+						>.icon{
+							font-size: 23px;
+							font-style: normal;
+							font-weight: 100;
+							font-family: Helvetica, sans-serif;
+						}
+					}  
+    }
+    .menu-item{
+        >.item{
+            display: block;
+            padding:  4vh;
+            text-align: center;
+            color: $black;
+						font-weight: 700;
+					&:hover{
+						background-color:$dark-blue;
+						color: $white;
+					}
+                    a{
+                        text-decoration: none;
+                        color: $black;
+                        &:hover {
+                            background-color: $dark-blue;
+                            color: $white;
+                        }
+                    }
+        }
+    }
+}

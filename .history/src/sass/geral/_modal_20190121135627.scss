@@ -1,0 +1,9 @@
+.modal.fade.show {
+    background-color: $bgdivider-opacity;
+    .close{
+            background-color: transparent;
+            border: transparent;
+            width: 10%;
+            cursor: pointer;
+    }
+}
