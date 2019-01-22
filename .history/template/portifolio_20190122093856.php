@@ -9,7 +9,7 @@
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
-                <i class="icon-zoom-in"  data-toggle="modal" data-target="#exampleModalCenter" id="img_1" for="modal" class="modal-btn"></i>
+                <i class="icon-zoom-in"  data-target="#exampleModalCenter" id="img_1" for="modal" class="modal-btn"></i>
 			</div>
 		</div>
 		<div class="thumb">
@@ -17,7 +17,7 @@
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
-                <i class="icon-zoom-in"  data-toggle="modal" data-target="#exampleModalCenter" id="img_2" for="modal" class="modal-btn"></i>
+                <i class="icon-zoom-in"  data-target="#exampleModalCenter" id="img_2" for="modal" class="modal-btn"></i>
 			</div>
 		</div>
 		<div class="thumb">
@@ -25,7 +25,7 @@
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
-                <i class="icon-zoom-in"  data-toggle="modal" data-target="#exampleModalCenter" id="img_3" for="modal" class="modal-btn"></i>
+                <i class="icon-zoom-in"  data-target="#exampleModalCenter" id="img_3" for="modal" class="modal-btn"></i>
 			</div>
 		</div>
 		<div class="thumb">
@@ -33,7 +33,7 @@
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
-                <i class="icon-zoom-in"  data-toggle="modal" data-target="#exampleModalCenter" id="img_4" for="modal" class="modal-btn"></i>
+                <i class="icon-zoom-in"  data-target="#exampleModalCenter" id="img_4" for="modal" class="modal-btn"></i>
 			</div>
 		</div>
 		<div class="thumb">
@@ -41,7 +41,7 @@
 			<div class="divider">
 				<h3 class="title">Born</h3>
 				<span class="date">20 ago 2018</span>
-                <i class="icon-zoom-in"  data-toggle="modal" data-target="#exampleModalCenter" id="img_5" for="modal" class="modal-btn"></i>
+                <i class="icon-zoom-in"  data-target="#exampleModalCenter" id="img_5" for="modal" class="modal-btn"></i>
 			</div>
 		</div>
 		<div class="thumb">

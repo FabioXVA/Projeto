@@ -4377,6 +4377,21 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .header {
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    padding: 0 3rem;
+  }
+}
+
 .show {
   display: none;
 }

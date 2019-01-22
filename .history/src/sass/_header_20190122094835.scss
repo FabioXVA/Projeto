@@ -8,9 +8,8 @@
 	@include justify-content(space-around);
 	@include align-items(center);
     @include mq('tablet-wide') {
-    @include flex-direction(row-reverse);
-    @include justify-content(space-between);
-       padding: 0 3rem;
+        @include flex-direction(row-reverse);
+        @include justify-content(space-bet);
     }
 }
 .show{
