@@ -17,7 +17,7 @@
 	background-color: $white;
 	transition:1s;
     z-index: 9999;
-     @include mq('tablet-wide') {
+     @include mq('tablet-small') {
          display: none;
      }
     >.social{
@@ -74,24 +74,7 @@
 }
 
 .menu{
-    display: none;
-    @include mq('desktop') {
-        @include flexbox();
-        @include flex-direction(row-reverse);
-        @include  justify-content("space-around");
-        @include align-items("center");
-        
-    }
-    >.menu-item{
-        >.item{
-            display: inline-block;
-            list-style: none;
-            padding: 0 10px;
-        }
-    }
-    >.social{
-        >.close{
-            display: none;
-        }
-    }
+    @include display( "flex");
+    @include  justify-content("space-around");
+    @include align-items("center");
 }

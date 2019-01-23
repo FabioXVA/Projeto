@@ -4484,6 +4484,12 @@ a.text-dark:hover, a.text-dark:focus {
   height: 21px;
 }
 
+@media only screen and (min-width: 640px) {
+  .hamburger {
+    display: none;
+  }
+}
+
 .hamburger > .line {
   width: 100%;
   height: 2px;
@@ -4508,6 +4514,12 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
 }
 
+@media only screen and (min-width: 640px) {
+  .show:checked ~ .menu-mobile {
+    display: none;
+  }
+}
+
 .menu-mobile {
   width: 70%;
   height: 100vh;
@@ -4519,6 +4531,12 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #fff;
   transition: 1s;
   z-index: 9999;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-mobile {
+    display: none;
+  }
 }
 
 .menu-mobile > .social {
@@ -4585,6 +4603,43 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 4vh 0px;
   text-decoration: none;
   color: #232323;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (min-width: 1248px) {
+  .menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-justify-content: "space-around";
+    -moz-justify-content: "space-around";
+    -ms-justify-content: "space-around";
+    justify-content: "space-around";
+    -ms-flex-pack: "space-around";
+    -webkit-align-items: "center";
+    -moz-align-items: "center";
+    -ms-align-items: "center";
+    align-items: "center";
+  }
+}
+
+.menu > .menu-item > .item {
+  display: inline-block;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.menu > .social > .close {
+  display: none;
 }
 
 .banner {
@@ -4985,7 +5040,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (min-width: 640px) {
   .project {
-    margin: 2% auto;
+    margin: 2% auto 0 auto;
   }
 }
 
@@ -5049,8 +5104,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (min-width: 640px) {
   .time {
-    margin: 10px auto;
+    margin: 0px auto;
     padding: 5%;
+    padding-bottom: 120px;
   }
 }
 

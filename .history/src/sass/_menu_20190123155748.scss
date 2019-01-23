@@ -75,7 +75,7 @@
 
 .menu{
     display: none;
-    @include mq('desktop') {
+    @include mq('tablet-wide') {
         @include flexbox();
         @include flex-direction(row-reverse);
         @include  justify-content("space-around");

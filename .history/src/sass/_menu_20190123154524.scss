@@ -2,9 +2,6 @@
 	left: 0vw;
 	opacity: 1;
 	display:block;
-     @include mq('tablet-small') {
-         display: none;
-     }
 }
 .menu-mobile{
     width: 70%;
@@ -17,7 +14,7 @@
 	background-color: $white;
 	transition:1s;
     z-index: 9999;
-     @include mq('tablet-wide') {
+     @include mq('tablet-small') {
          display: none;
      }
     >.social{
@@ -30,8 +27,8 @@
 			
         >.icon{
             font-size: 20px;
-            color:#fff;
-            padding: 7px 6px;
+						color:#fff;
+						padding: 7px 6px;
 				}
 				>.close{
 						position: absolute;
@@ -69,29 +66,6 @@
                 color: $black;
                 
             }
-        }
-    }
-}
-
-.menu{
-    display: none;
-    @include mq('desktop') {
-        @include flexbox();
-        @include flex-direction(row-reverse);
-        @include  justify-content("space-around");
-        @include align-items("center");
-        
-    }
-    >.menu-item{
-        >.item{
-            display: inline-block;
-            list-style: none;
-            padding: 0 10px;
-        }
-    }
-    >.social{
-        >.close{
-            display: none;
         }
     }
 }
