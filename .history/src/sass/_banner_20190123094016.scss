@@ -1,0 +1,55 @@
+.banner{
+    width: 100%;
+    display: block;
+    background-color: $black;
+    padding: 20vh 0;
+    >.title{
+        color: $white;
+        font-size: 25px;
+        text-align: center;
+         @include mq('tablet-wide') {
+            font-size: 35px;
+         }
+    }
+    >.description{
+        @extend .title;
+        font-size: 30px;
+        margin-top: 0;
+        @include mq('tablet-wide') {
+            font-size: 40px;
+        }
+    }
+	>.button-group{
+		width:100%;
+		height:auto;
+		@include flexbox();
+		@include justify-content(center);
+		@include align-items(center);
+		@include flex-direction(column);
+        @include mq('tablet-wide') {
+            @include flex-direction(row);
+		    @include align-items(baseline);
+        }
+		
+		>.button{
+			background-color: transparent; 
+			margin: 2rem  0 1.5rem 0;
+			@include ghost-button(arial, 14px, $white, 1px, $white, 15px 50px, 0.2s, $black);
+            @include mq('tablet-wide') {
+                background-color: $primary;
+                border: none;
+                @include ghost-button(arial, 14px, $white, 1px, $white, 15px 50px, 0.2s, $white);
+                margin: 0 15px;
+            }
+			&.reverce{
+				margin:0;
+				background-color: $black-button; 
+				@include ghost-button(arial, 14px, $white , 0px, $primary, 15px 50px, 0.2s, $white);
+                 @include mq('tablet-wide') {
+                        padding: 16px 51px;
+                 }
+		}		
+	}
+	
+	}
+}

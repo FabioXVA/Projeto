@@ -1,0 +1,56 @@
+.footer {
+    background-color: $bgquaternary;
+    @include mq('tablet-wide') {
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include flex-wrap(colum);
+
+    }
+    >.form-container {
+        max-width: 80%;
+        margin: 0 auto;
+
+        >.form {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            >input.form-itens {
+                width: 48%;
+                padding: 10px 0 10px 17px;
+                margin: 1.5rem 0;
+                box-sizing: border-box;
+                
+            }
+
+            >.form-itens {
+                max-width: 100%;
+                background-color: transparent;
+                color: $white;
+                border: 1px solid $white;
+                width: 100%;
+
+                ::placeholder {
+                    background-color: transparent;
+                    color: $white;
+                }
+
+                &.button {
+                    background-color: $primary;
+                    @include ghost-button(arial, 14px, $white, 0px, $white, 15px 50px, 0.2s, $primary);
+                }
+            }
+        }
+    }
+    .copy{
+        background-color: $bgquinquennary;
+        padding: 1rem 0;
+        color: $white;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}

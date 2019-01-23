@@ -1,0 +1,95 @@
+.time{
+	width:100vw;
+    margin: 30px auto;
+    padding: 15% 0 40% 0;
+        @include mq('tablet-wide') {
+            margin: 10px auto;
+        }
+  	background-color:$bgtertiary;
+	>.slide-container{
+		max-width: 80%;
+		height: 220px;
+   		margin: 0 auto;
+        .owl-carousel .owl-stage-outer{
+            overflow-x:hidden;
+            height: 270px;
+            padding-top: 50px;
+            position: relative;
+            .description-time {
+                padding: 70px 25px;
+                text-align: center;
+                font-size: 13px;
+                 background-color: $white;
+                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+                 0 1px 2px rgba(0, 0, 0, 0.24);
+                 >.black-lite{
+                     color: $black-button;
+                 }
+            }
+            .item.slide-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                .avatar{
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    top: -50px;
+                    border-radius: 50%;
+                    background-color: #000;
+                }
+            }
+        }
+	}
+    .owl-theme .owl-nav {
+        position: absolute;
+        width: 100%;
+        top: 34%;
+
+
+        .owl-prev,
+        .owl-next{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: $white;
+            :active,
+            :focus,
+            :hover {
+                transition: all 0.6s;
+                color: $white;
+                background-color: $bgsecondary;
+            }
+        }
+        .jello-vertical{
+            -webkit-animation: jello-vertical 0.9s both;
+            animation: jello-vertical 0.9s both;
+        }
+        .owl-prev i,
+        .owl-next i{
+            padding: 0px 0px 4px 3px;
+            background-color: transparent;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 50%; 
+            font-size: 30px;
+            color: $bgsecondary;
+            
+        }
+        .owl-prev{
+            left: -28px;
+            .icon-arrow-left {
+                padding: 0px 3px 4px 0px;
+            }
+        }
+        .owl-next{
+            right: -28px;
+        }
+         [class*='owl-']:hover {
+            color: $black;
+            
+        }
+
+    }
+}

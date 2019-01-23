@@ -1,0 +1,31 @@
+.conteiner,
+.card-group,
+.container-project,
+.container-metodologia {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.conteiner{
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+}
+.card-group,
+.servicos,
+.container-metodologia,
+.portifolio,
+.projeto,
+.time,
+.footer{
+	@include flexbox();
+	@include justify-content(space-between);
+	@include align-items(center);
+	@include flex-wrap(wrap);
+}
+.col-half{
+	ms-flex-preferred-size: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	padding: 30px;
+	box-sizing: border-box;
+}
