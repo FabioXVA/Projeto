@@ -8,6 +8,7 @@ $('.owl-carousel').owlCarousel({
     navText: ["<i class='icon-arrow-left'></i>", "<i class='icon-arrow-right'></i>"],
     dots: false,
     autoWidth: false,
+    navContainer:true,
     responsive: {
         0: {
             items: 1

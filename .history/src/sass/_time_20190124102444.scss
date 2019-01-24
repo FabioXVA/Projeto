@@ -9,6 +9,10 @@
         }
   	background-color:$bgtertiary;
 	>.slide-container{
+        @include mq('tablet-small') {
+            width: 100%;
+        }
+		max-width: 80%;
 		height: 220px;
    		margin: 0 auto;
         .owl-carousel .owl-stage-outer{
@@ -16,19 +20,16 @@
             height: 270px;
             padding-top: 50px;
             position: relative;
-            .owl-item{
+            .description-time {
+                padding: 70px 25px;
+                text-align: center;
+                font-size: 13px;
                  background-color: $white;
                  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
                  0 1px 2px rgba(0, 0, 0, 0.24);
-                .description-time {
-                    padding: 70px 25px;
-                    text-align: center;
-                    font-size: 13px;
-                    
-                    >.black-lite{
-                        color: $black-button;
-                    }
-                }
+                 >.black-lite{
+                     color: $black-button;
+                 }
             }
             .item.slide-container{
                     display: flex;
@@ -48,7 +49,8 @@
 	}
     .owl-theme .owl-nav {
         position: absolute;
-        width: 100%;
+        width: 110%;
+        left: -5%;
         top: 34%;
          @include mq('tablet-small') {
             top: 45%;
@@ -84,12 +86,20 @@
         }
         .owl-prev{
             left: -3%;
+             @include mq('tablet-small') {
+                left: 0px;
+
+             }
             .icon-arrow-left {
                 padding: 0px 3px 4px 0px;
             }
         }
         .owl-next{
             right: -3%;
+            @include mq('tablet-small') {
+                right: 0px;
+
+            }
         }
          [class*='owl-']:hover {
             color: $black;

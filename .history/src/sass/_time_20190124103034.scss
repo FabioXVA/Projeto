@@ -9,6 +9,10 @@
         }
   	background-color:$bgtertiary;
 	>.slide-container{
+        @include mq('tablet-small') {
+            width: 100%;
+        }
+		max-width: 80%;
 		height: 220px;
    		margin: 0 auto;
         .owl-carousel .owl-stage-outer{

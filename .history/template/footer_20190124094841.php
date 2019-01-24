@@ -9,8 +9,8 @@
         </form>
     </div>
     
-    <div class="copy" id="copyright">Copyright ©  <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script> - Todos os direitos reservados </div>
 </footer>
+ <div class="copy" id="copyright">Copyright ©  <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script> - Todos os direitos reservados </div>
 
 <script src="src/js/jquey.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

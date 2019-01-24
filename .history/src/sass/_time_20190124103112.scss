@@ -9,6 +9,10 @@
         }
   	background-color:$bgtertiary;
 	>.slide-container{
+        @include mq('tablet-small') {
+            width: 100%;
+        }
+		max-width: 80%;
 		height: 220px;
    		margin: 0 auto;
         .owl-carousel .owl-stage-outer{
@@ -83,13 +87,13 @@
             
         }
         .owl-prev{
-            left: -3%;
+            left: -11%;
             .icon-arrow-left {
                 padding: 0px 3px 4px 0px;
             }
         }
         .owl-next{
-            right: -3%;
+            right: -11%;
         }
          [class*='owl-']:hover {
             color: $black;
