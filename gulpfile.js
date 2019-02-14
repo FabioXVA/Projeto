@@ -27,7 +27,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('serve', ['sassDev', 'sassProd','watch'], function () {
 
 	browserSync.init({
-		proxy: "http://localhost/Fabio/Projeto",
+		proxy: "http://localhost/sites/Projeto",
 		notify: false
 	});
 
